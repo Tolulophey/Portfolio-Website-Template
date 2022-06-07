@@ -9,9 +9,10 @@ html, body {
       margin: 0;
       padding: 0;
       border: 0px;
-      background-color: rgb(14, 161, 14);
+      background-color:rgba(20, 8, 83, 0.4);
+      /* background-image: linear-gradient(rgba(20, 8, 83, 0.2),rgba(19, 228, 47, 0.4) ); */
+      background-repeat: no-repeat;
       font-size: 22px;
-      text-align: justify;
   }
   .nav{
       display: flex;
@@ -19,7 +20,7 @@ html, body {
       align-items: center;
       width: 100%;
       height: 100px;
-      background-color: green;
+      background-color: rgba(7, 14, 77, 0.5);
   }
   nav > img{
       margin-right: auto;
@@ -48,29 +49,24 @@ html, body {
       padding: 40px;
       background-color: bisque;
       height: auto;
-      max-width: 60%;
+      max-width: 40%;
       margin: 0 auto;
       margin-top: 30px;
       margin-bottom: 0px;
       border-radius: 20px;
   }
-  form > label{
-      width: 175px;
-      /* text-align:right; */
-      padding-right: 10px;
-      display:inline-block;
-      /* min-width: 175px; */
-      /* background-color: white; */
-      
-  }
   input{
-      border: 3px solid red;
+      border: 0px;
+      border-top: 3px solid rgba(0, 0, 0, 0.2);
       height: 30px;
-      width: 50%;
-      
+      background-color: rgba(225, 191, 191);
+      padding: 5px;
+      width: 100%;
+      border-radius: 10px;
+      margin: 0 auto;
   }
   select{
-      border: 3px solid red;
+      border: 3px solid rgba(0, 0, 0, 0.5);
       height: 30px;
       width: 50%;
       font-size: large;
@@ -84,16 +80,17 @@ html, body {
       border-radius: 20px;
       cursor: pointer;
   }
-  input[type="checkbox"]{
-      padding: 0;
-      margin: 0;
-      display: inline;
-  }
-  form > p{
+ 
+  label{
       display: inline-block;
-      margin: 0;
-      padding: 0;
-      
+      margin: 10px 0px;
+  }
+  input[type="checkbox"]{
+      text-align: left;
+      background-color: black;
+  }
+  form > p {
+      display: inline;
   }
   textarea{
       margin: 5px 0px;
@@ -140,8 +137,37 @@ html, body {
       /* margin: 2% 3% 0% 3%; */
       
   }
-  ul> li {
-      list-style-type: square;
+  ul> li, ol > li {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-left: 0px;
+      padding-left: 0px;
+  }
+  li > h3{
+      margin:5px 0px 5px 20px;
+      text-align: center;
+  }
+  .about{
+      text-align: center;
+      margin: 0;
+      padding: 0;
+  }
+  .about-me{
+      display: flex;
+      width: 100%;
+      background-color: white;
+      justify-content: space-evenly;
+      height: 250px;
+  }
+  .about-me > li {
+      width: 300px;
+      margin-top: 0px;
+      margin-right: 5%;
+      background-color: green;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow:   5px 2px #888888;
   }
   .contact-me{
       width: 50%;
@@ -155,7 +181,7 @@ html, body {
   .footer{
       margin: 0px;
       height: 200px;
-      background-color: blue;
+      background-color: black;
         
   }
   .footer2{
