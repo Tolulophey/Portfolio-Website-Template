@@ -1,6 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
 html, body {
     height: 100%;
     width: 100%;
+    margin: 0;
+    padding: 0;
   }
 body{
       width: 100%;
@@ -17,19 +24,24 @@ body{
 p{
     text-align: justify;
 }
-  .nav{
+header{
+    width: 100%;
+}
+.nav{
+      box-sizing: border-box;
       display: flex;
       justify-content: flex-start;
       align-items: center;
       width: 100%;
       height: 100px;
       background-color: rgba(7, 14, 77, 0.5);
-  }
-  nav > img{
+      margin: 0;
+}
+nav > img{
       margin-right: auto;
       margin-left: 30px;
-  }
-  nav > a > button {
+}
+nav > a > button {
       width: 8rem;
       margin-right: 20px;
       color: rgb(20, 8, 83);
@@ -37,29 +49,29 @@ p{
       cursor: pointer;
       border: 0px solid black;
       border-radius: 10px;
-  }
-  .active{
+}
+.active{
       background-color: red;
-  }
-  nav  > button:hover{
+}
+nav  > button:hover{
       color: white;
       background-color: green;
-  }
-  nav > button > a:hover{
+}
+nav > button > a:hover{
     color: white;
     background-color: green;
 }
-  form{
+form{
       padding: 40px;
       background-color: #fff;
       height: auto;
       max-width: 40%;
       margin: 0 auto;
       margin-top: 30px;
-      margin-bottom: 0px;
+      margin-bottom: 30px;
       border-radius: 20px;
   }
-  input{
+input{
       border: 0px;
       border-top: 3px solid rgba(0, 0, 0, 0.2);
       height: 30px;
@@ -69,7 +81,7 @@ p{
       border-radius: 10px;
       margin: 0 auto;
   }
-  select{
+select{
       border: 3px solid rgba(0, 0, 0, 0.5);
       background-color: rgba(225, 191, 191) ;
       height: 45px;
@@ -77,12 +89,12 @@ p{
       width: 100%;
       font-size: large;
       color: gray;
-  }
-  input::placeholder{
+}
+input::placeholder{
       padding-left: 5px;
     color: gray;
-  }
-  input[type="submit"]{
+}
+input[type="submit"]{
       background-color: rgba(225, 191, 191);
       width: 40%;
       height: 50px;
@@ -90,46 +102,47 @@ p{
       margin: 0px 30%;
       border-radius: 20px;
       cursor: pointer;
-  }
- 
-  label{
+}
+label{
       display: inline-block;
       margin: 10px 0px;
-  }
-  input[type="checkbox"]{
+}
+input[type="checkbox"]{
       text-align: left;
       background-color: black;
-  }
-  form > p {
+}
+form > p {
       display: inline;
-  }
-  textarea{
+}
+textarea{
       margin: 5px 0px;
       resize: none;
       outline: none;
       border: 3px solid red;
-  }
-  input[type="submit"]:hover{
+}
+input[type="submit"]:hover{
       background-color: orange;
       color: white;  
-  }
-  .row{
+}
+.row{
       box-sizing: border-box;
       display: flex;
       justify-content: space-between;
       width: 95%;
       background-color: #fff;
       margin: 0 auto;
+      margin-top: 30px;
+      margin-bottom: 50px;
       border-radius: 10px;
-      height: auto;
-      padding: 30px 50px;
-  }
-  .left-column{
+      height:fit-content;
+      padding: 30px 10px;
+}
+.left-column{
       width: 40%;
       font-weight: bold;
       text-align: center;
-  }
-  .right-column{
+}
+.right-column{
       width: 60%;
   }
 
@@ -153,6 +166,7 @@ p{
 .gray {
     color: #918E9B;
     margin: 20px 0;
+    text-align: left;
 }
 textarea{
     height: 150px;
@@ -163,7 +177,7 @@ textarea{
       height: 200px;
       border: 5px solid gold;
       border-radius: 50%;
-  }
+}
 div > h1{
       text-align: center;
       background-color: white;
@@ -178,13 +192,9 @@ ul> li, ol > li {
       margin-left: 0px;
       padding-left: 0px;
   }
-li > h3{
-      margin:5px 0px 5px 20px;
-      text-align: center;
-  }
 .about{
       text-align: center;
-      margin: 0;
+      margin-bottom: 20px;
       padding: 0;
   }
 .about-me{
@@ -203,41 +213,44 @@ li > h3{
       border-radius: 10px;
       box-shadow:   5px 2px rgb(128, 128, 128, 0.9);
   }
-  .contact-me{
+.contact-me{
       width: 50%;
-      margin: 0 25%;
+      margin: 20px 25%;
       color: brown;
       height: 50px;
       cursor: pointer;
       border: 0px solid black;
       border-radius: 10px;
+}
+.footer{
+      margin: 10px;
+      height: 200px;
+      background-color: black;
+        width: 100%;
+
   }
-  .footer{
-      margin: 0px;
+.footer2{
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      margin: 10px;
       height: 200px;
       background-color: black;
         
-  }
-  .footer2{
-      position: absolute;
-      bottom: 0;
-      margin: 0px;
-      height: 200px;
-      width: 100%;
-      background-color: blue;
-        
-  }
-  .footer > p {
+}
+.footer > p, .footer2 > p {
       text-align: center;
       color: white;
-  }
-  .social-media {
+      padding: 10px;
+}
+.social-media {
       display: flex;
       justify-content: center;
       align-items: center;
-    }
-    .social-media > a > img{
+      padding: 10px;
+}
+.social-media > a > img{
         margin-right: 20px;
         width: 30px;
         height: 30px;
-    }  
+}  
