@@ -2,7 +2,7 @@ html, body {
     height: 100%;
     width: 100%;
   }
-  body{
+body{
       width: 100%;
       min-height: 100%;
       box-sizing: border-box;
@@ -14,6 +14,9 @@ html, body {
       background-repeat: no-repeat;
       font-size: 22px;
   }
+p{
+    text-align: justify;
+}
   .nav{
       display: flex;
       justify-content: flex-start;
@@ -26,8 +29,8 @@ html, body {
       margin-right: auto;
       margin-left: 30px;
   }
-  nav > button {
-      width: 15%;
+  nav > a > button {
+      width: 8rem;
       margin-right: 20px;
       color: rgb(20, 8, 83);
       height: 50px;
@@ -35,19 +38,20 @@ html, body {
       border: 0px solid black;
       border-radius: 10px;
   }
-  button > a{
-    text-decoration: none;
-  }
   .active{
       background-color: red;
   }
   nav  > button:hover{
       color: white;
-      background-color: black;
+      background-color: green;
   }
+  nav > button > a:hover{
+    color: white;
+    background-color: green;
+}
   form{
       padding: 40px;
-      background-color: bisque;
+      background-color: #fff;
       height: auto;
       max-width: 40%;
       margin: 0 auto;
@@ -67,12 +71,19 @@ html, body {
   }
   select{
       border: 3px solid rgba(0, 0, 0, 0.5);
-      height: 30px;
-      width: 50%;
+      background-color: rgba(225, 191, 191) ;
+      height: 45px;
+      border-radius: 10px;
+      width: 100%;
       font-size: large;
+      color: gray;
+  }
+  input::placeholder{
+      padding-left: 5px;
+    color: gray;
   }
   input[type="submit"]{
-      background-color: red;
+      background-color: rgba(225, 191, 191);
       width: 40%;
       height: 50px;
       border: 0px;
@@ -106,68 +117,91 @@ html, body {
       box-sizing: border-box;
       display: flex;
       justify-content: space-between;
-      width: 100%;
-      background-color: orange;
-      /* margin: 0 auto; */
+      width: 95%;
+      background-color: #fff;
+      margin: 0 auto;
+      border-radius: 10px;
       height: auto;
       padding: 30px 50px;
   }
   .left-column{
       width: 40%;
-      /* margin:50px 50px 50px 50px ; */
-      /* margin-top: 150px; */
       font-weight: bold;
       text-align: center;
-      /* margin-left: 15px;
-      margin-right: 200px; */
   }
   .right-column{
       width: 60%;
-      /* margin: 50px; */
   }
-  .mypicture{
+
+.left-column > p {
+    text-align: center;
+}
+.left{
+    width: 70%;
+}
+.right{
+    margin: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    font-weight: bold;
+}
+.right > p {
+    margin: 10px;
+}
+.gray {
+    color: #918E9B;
+    margin: 20px 0;
+}
+textarea{
+    height: 150px;
+    width: 100%;
+}
+.mypicture{
       width: 200px;
       height: 200px;
       border: 5px solid gold;
       border-radius: 50%;
   }
-  div > h1{
+div > h1{
       text-align: center;
       background-color: white;
-      /* margin: 2% 3% 0% 3%; */
-      
-  }
-  ul> li, ol > li {
+      margin: 0px;
+      padding: 10px;
+    
+}
+ul> li, ol > li {
       display: flex;
       align-items: center;
       flex-direction: column;
       margin-left: 0px;
       padding-left: 0px;
   }
-  li > h3{
+li > h3{
       margin:5px 0px 5px 20px;
       text-align: center;
   }
-  .about{
+.about{
       text-align: center;
       margin: 0;
       padding: 0;
   }
-  .about-me{
+.about-me{
       display: flex;
       width: 100%;
-      background-color: white;
+      /* background-color: white; */
       justify-content: space-evenly;
       height: 250px;
   }
-  .about-me > li {
+.about-me > li {
       width: 300px;
       margin-top: 0px;
       margin-right: 5%;
-      background-color: green;
+      background-color: #fff;
       text-align: center;
       border-radius: 10px;
-      box-shadow:   5px 2px #888888;
+      box-shadow:   5px 2px rgb(128, 128, 128, 0.9);
   }
   .contact-me{
       width: 50%;

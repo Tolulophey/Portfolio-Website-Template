@@ -11,44 +11,47 @@
     <header>
         <nav class="nav" style="justify-content: space-around;">
             <img src="./images/mypicture.jpg" alt="" height="50px">
-            <button><a href="index.html">Home</a></button>
-            <button class="active"><a href="contact.html">Contact Us</a></button>
-            <button><a href="login.html">Login</a></button>
-            <button><a href="registration.html">Register</a></button>
+            <a href="index.html"><button>Home</button></a>
+            <a href="#"><button class="active">Contact Us</button></a>
+            <a href="login.html"><button>Login</button></a>
+            <a href="registration.html"><button>Register</button></a>
         </nav>
     </header>
     <main>
         <div className='text-center'>
-            <h1 >Contact Us</h1>
+            <h1>Contact Us</h1>
             <p>We are here to answer questions you may have about our services. Reach out to us and we will respond as soon  as we can.</p>
             <p>You can as well contact us if there is anything you have wanted to experience and can't find in our services. Let us know and we promise you that we will do out best to take a prompt action on such request.</p>
         </div>
-        <form>
-            <label for="name">Full Name</label><br/>
-            <input type="text" id="name" placeholder='Your Full Name'/><br/>
-            <label for="email">Email</label><br/>
-            <input type="email" id="name" placeholder='Your E-mail'/><br/>
-            <textarea id="message" name="message" placeholder='Your Message'></textarea><br/>
-            <input type='submit' value="Send" />
-        </form>
-        <div className='column details'>
-            <p>E-MAIL</p>
-            <p>reactgroup14@sidehustleinternship.ng</p>
-            <p>TELEPHONE</p>
-            <p>+234(0) 702 3235 896</p>
-            <p>ADDRESS</p>
-            <p>Akobo Ojurin , Ibadan, Nigeria</p>
-        </div>
+        <div class="row">
+            <form class="left">
+                <label for="name">Full Name</label><br/>
+                <input type="text" id="name" placeholder='Your Full Name'/><br/>
+                <label for="email">Email</label><br/>
+                <input type="email" id="name" placeholder='Your E-mail'/><br/>
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" placeholder='Your Message'></textarea><br/>
+                <input type='submit' value="Send" />
+            </form>
+            <div class='right'>
+                <p>E-MAIL</p>
+                <p class="gray">amoletolulope@gmail.com</p>
+                <p >TELEPHONE</p>
+                <p class="gray">+2348063673201</p>
+                <p>ADDRESS</p>
+                <p class="gray">Ile-Ife, Osun-State, Nigeria.</p>
+            </div>
+        </div>  
     </main>
     <footer class="footer">
-        <p>You can easily contack me either by clicking on the Contact Me button above or any of my Social Media Links below</p>
+        <p>You can easily contact me either by clicking on the Contact Me button above or any of my Social Media Links below</p>
         <div class="social-media">
-            <a href="https://twitter.com/Tolulophey" target="_blank"><img src='../images/Twitter.png' alt="twitter" /></a>
-            <a href="https://web.facebook.com/amole.tolulopebukunmi/" target="_blank"><img src='../images/Facebook.png' alt="facebook" /></a>
-            <a href="https://www.linkedin.com/in/amole-tolulope-bukunmi/" target="_blank"><img src='../images/linkedin.png' alt="linkedin" /></a>
-            <a href="https://github.com/Tolulophey" target="_blank"><img src='../images/GitHub.png' alt="github" /></a>
+            <a href="https://twitter.com/Tolulophey" target="_blank"><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/64px-Twitter-logo.svg.png' alt="twitter" /></a>
+            <a href="https://web.facebook.com/amole.tolulopebukunmi/" target="_blank" ><img src='https://upload.wikimedia.org/wikipedia/commons/4/44/Facebook_Logo.png' alt="facebook" /></a>
+            <a href="https://www.linkedin.com/in/amole-tolulope-bukunmi/" target="_blank"><img src='https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg' alt="linkedin" /></a>
+            <a href="https://github.com/Tolulophey" target="_blank"><img src='../images/GitHub1.png' alt="github" /></a>
         </div>
-        <p>&copy; Tolulophey 2022 </p>
+        <p>&copy; 2022 Tolulophey </p>
     </footer>
 </body>
 </html>
