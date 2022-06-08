@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Page</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="test.css">
 </head>
 <body>
     <header>
@@ -24,17 +25,17 @@
             Voluptatem placeat autem ex sed nisi, labore reiciendis nam temporibus qui? Cum repudiandae, dolorem suscipit perspiciatis, adipisci odit quia consectetur odio officiis autem doloremque nemo repellendus culpa nesciunt accusamus asperiores!</p>
         </div>
         <form action="">
-            <label for="firstname">First Name</label><br>
-            <input type="text" name="firstname" placeholder="First Name"><br>
-            <label for="lastname">Last Name</label><br>
-            <input type="text" name="lastname" placeholder="Last Name"><br>
-            <label for="phone">Phone Number</label><br>
-            <input type="text" name="phone" placeholder="Phone Number"><br>
+            <label for="fname">First Name</label><br>
+            <input type="text" name="fname" placeholder="First Name"><br>
+            <label for="lname">Last Name</label><br>
+            <input type="text" name="lname" placeholder="Last Name"><br>
+            <label for="pnumber">Phone Number</label><br>
+            <input type="number" name="pnumber" placeholder="Phone Number"><br>
             <label for="gender">Gender</label><br>
             <select name="gender" id="">
-                <option value="">Male</option>
-                <option value="">Female</option>
-                <option value="">Prefer not to say</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Prefer not to say</option>
             </select><br>
             <label for="country">Country</label><br>
             <input type="text" name="country"><br>
@@ -46,8 +47,10 @@
             <input type="password" name="password1"><br>
             <label for="password2">Confirm Password</label><br>
             <input type="password" name="password2"><br><br>
-            <!-- <input type="checkbox" id="" name="consent">
-            <p>By clicking on Register you agree to our Terms and Policies</p> -->
+            <input type="checkbox" id="" name="consent">
+            <label for="consent">By clicking on Register you agree to our Terms and Policies</label><br>
+
+            <!-- <p>By clicking on Register you agree to our Terms and Policies</p> -->
             <input type="submit" name="register" value="Register">
         </form>
     </main>

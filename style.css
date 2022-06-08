@@ -2,17 +2,18 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
+    box-sizing: border-box;
 }
 html, body {
     height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
+    
   }
 body{
       width: 100%;
       min-height: 100%;
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
       border: 0px;
@@ -23,9 +24,6 @@ body{
   }
 p{
     text-align: justify;
-}
-header{
-    width: 100%;
 }
 .nav{
       box-sizing: border-box;
@@ -74,12 +72,11 @@ form{
 input{
       border: 0px;
       border-top: 3px solid rgba(0, 0, 0, 0.2);
-      height: 30px;
+      height: 40px;
       background-color: rgba(225, 191, 191);
       padding: 5px;
       width: 100%;
       border-radius: 10px;
-      margin: 0 auto;
   }
 select{
       border: 3px solid rgba(0, 0, 0, 0.5);
@@ -92,14 +89,14 @@ select{
 }
 input::placeholder{
       padding-left: 5px;
-    color: gray;
+      color: gray;
 }
 input[type="submit"]{
       background-color: rgba(225, 191, 191);
       width: 40%;
       height: 50px;
       border: 0px;
-      margin: 0px 30%;
+      margin: 10px 30%;
       border-radius: 20px;
       cursor: pointer;
 }
@@ -108,11 +105,11 @@ label{
       margin: 10px 0px;
 }
 input[type="checkbox"]{
-      text-align: left;
       background-color: black;
-}
-form > p {
-      display: inline;
+      border-radius: 5px;
+      margin-right: 10px;
+      width: 18px;
+      height: 18px;
 }
 textarea{
       margin: 5px 0px;
@@ -223,7 +220,7 @@ ul> li, ol > li {
       border-radius: 10px;
 }
 .footer{
-      margin: 10px;
+      margin-top: 10px;
       height: 200px;
       background-color: black;
         width: 100%;
@@ -233,7 +230,7 @@ ul> li, ol > li {
       position: absolute;
       bottom: 0;
       width: 100%;
-      margin: 10px;
+      margin-top: 10px;
       height: 200px;
       background-color: black;
         
@@ -254,3 +251,6 @@ ul> li, ol > li {
         width: 30px;
         height: 30px;
 }  
+nav{
+    margin: 0;
+}
