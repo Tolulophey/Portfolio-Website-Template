@@ -39,9 +39,9 @@ div p {
   margin: 0;
 }
 .logo{
-  font-family: 'Fascinate', cursive;
+  font-family: 'Fascinate', 'cursive';
   color: red;
-  margin:0 10px;
+  margin-left: 20px;
   font-size: 50px;
   margin-right: auto;
 }
