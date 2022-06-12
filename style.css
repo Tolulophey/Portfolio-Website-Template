@@ -3,7 +3,6 @@
   padding: 0;
   list-style-type: none;
   box-sizing: border-box;
-  color: "green";
 }
 html,
 body {
@@ -12,6 +11,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
+  
 }
 body {
   width: 100%;
@@ -20,7 +20,6 @@ body {
   padding: 0;
   border: 0px;
   background-color: rgba(20, 8, 83, 0.4);
-  /* background-image: linear-gradient(rgba(20, 8, 83, 0.2),rgba(19, 228, 47, 0.4) ); */
   background-repeat: no-repeat;
   font-size: 22px;
 }
@@ -61,13 +60,11 @@ nav > a > button {
 .active {
   background-color: red;
 }
-nav > button:hover {
+nav > a > button:hover {
   color: white;
-  background-color: green;
-}
-nav > button > a:hover {
-  color: white;
-  background-color: green;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 10px;
 }
 form {
   padding: 40px;
@@ -125,7 +122,9 @@ textarea {
   margin: 5px 0px;
   resize: none;
   outline: none;
-  border: 3px solid rgba(225, 191, 191);
+  background-color: rgba(225, 191, 191); 
+  border-top: 3px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
   height: 150px;
   width: 100%;
 }
