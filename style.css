@@ -337,4 +337,7 @@ nav > a > button {
 form{
   width: 95%;
 }
+input, textarea{
+  width: 100%;
+}
 }
