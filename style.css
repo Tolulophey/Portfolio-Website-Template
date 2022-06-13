@@ -334,4 +334,7 @@ nav > a > button {
 .right, .left, .left-column, .right-column{
   width: 95%;
 }
+form{
+  width: 95%;
+}
 }
