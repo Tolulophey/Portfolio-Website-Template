@@ -220,7 +220,7 @@ input[type="submit"]:hover {
 .mypicture {
   width: 200px;
   height: 200px;
-  border: 5px solid gold;
+  border: 2px solid goldenrod;
   border-radius: 50%;
 }
 div > h1 {
