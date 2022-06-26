@@ -341,7 +341,7 @@ nav{
 }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px), (max-width:750px) {
 body{
   font-size: 15px;
 }
@@ -381,13 +381,16 @@ body{
 .nav-links.responsive{
   display: flex;
 }
+  form{
+    width: 95%;
+  }
 input[type='submit']{
   width: 60%;
   margin: 0 auto;
   border-radius: 10px;
 }
 }
-@media only screen and (max-width: 400px), (max-width:500px) {
+@media only screen and (max-width: 400px), (max-width:550px) {
 .logo{
   font-size: 40px;
 }
